@@ -1,0 +1,118 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Math Explorers · Teacher Guide</title><style>body{font-family:Poppins,Arial,sans-serif;color:#202927;background:#f5f5f0;line-height:1.65;margin:0}main{max-width:1000px;margin:auto;padding:40px}h1,h2{line-height:1.2}h2{margin-top:40px}table{width:100%;border-collapse:collapse;background:white;font-size:14px}td,th{padding:14px;border:1px solid #d5dad5;text-align:left}code{overflow-wrap:anywhere;background:#e9ece6;padding:2px 5px}a{color:#344b42}nav{display:flex;flex-wrap:wrap;gap:12px}nav a{background:white;border:1px solid #d5dad5;padding:12px;border-radius:6px}@media(max-width:650px){main{padding:18px}table{display:block;overflow:auto}}@media print{nav{display:none}main{padding:0}h2{break-after:avoid}tr{break-inside:avoid}}</style><main><nav><a href="index.html#map?a=4&b=6">Open map</a><a href="index.html#tree?n=24">Open factor tree</a><a href="index.html#multiples?a=4&b=6">Open number lines</a><a href="index.html#factors?a=24&b=36">Open GCF / LCM</a></nav><h1>Math Explorers</h1>
+<p>A quiet, reusable toolkit for multiples, factors, prime factorization, GCF and LCM. Four tools live in one self-contained <code>index.html</code>. The identical file runs from GitHub Pages or from your computer. No build step, server, login, CDN, external fonts, analytics or student data. It uses Poppins when installed, with Arial as the offline fallback.</p>
+<h2>Start offline</h2>
+<ol>
+<li>Extract the ZIP into a folder you can find on your classroom computer.</li>
+<li>Double-click <code>index.html</code> and open it in Chrome, Firefox, Safari or Edge. If your computer opens a text editor, use <strong>Open With → browser</strong>.</li>
+<li>Select a tool, enter your numbers, and use <strong>Present</strong> to hide navigation and teacher notes. The tool controls remain available. Escape or <strong>Exit presentation</strong> returns to the normal view. Browser full-screen is a separate command.</li>
+<li>Test once with Wi-Fi off. Keep the local file available even when you usually use the hosted version.</li>
+</ol>
+<p>The standalone <code>Math-Explorers.html</code> download is the same application under a descriptive filename. It needs no neighbouring files. Use <code>index.html</code> in the GitHub repository so its home URL works.</p>
+<h2>GitHub Pages deployment</h2>
+<p>Suggested repository: <code>math-explorers</code> on your existing <code>macinnis61</code> account.</p>
+<ol>
+<li>Sign in to GitHub and create a new public repository called <code>math-explorers</code>.</li>
+<li>Upload <strong>the contents</strong> of this extracted folder into the repository root: <code>index.html</code>, <code>guide.html</code>, <code>README.md</code>, and <code>LICENSE.txt</code>. Do not upload only the ZIP or create an extra nested folder.</li>
+<li>Open <strong>Settings → Pages</strong>. Under <strong>Build and deployment</strong>, choose <strong>Deploy from a branch</strong>. Select <strong>main</strong>, <strong>/(root)</strong>, then <strong>Save</strong>.</li>
+<li>Wait for GitHub to finish publishing; use the URL shown in Pages settings. For this account/repository, the expected URL is <code>https://macinnis61.github.io/math-explorers/</code>. It is a proposed address until you deploy.</li>
+<li>Open each tool link below and check that the starting numbers are correct.</li>
+<li>To update later, replace <code>index.html</code> in the same repository and commit. Keep the filename, repository name and tool route names unchanged so slide links continue to work. Refresh an open browser tab after deployment. Replace your offline copy separately.</li>
+</ol>
+<p>Official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site</p>
+<p>If using an existing Pages repository, place these files in a <code>math-explorers</code> folder within its published source. Your base URL will include that folder. Do not change the Pages settings of an existing site just for this tool.</p>
+<h2>Stable slide links and placeholders</h2>
+<p>Use <code>{MATH_EXPLORERS_BASE}</code> as a planning placeholder for the published folder URL <strong>including its trailing slash</strong>. It is a token for us to replace when building slides, not a working URL and not an automatically resolved Google Slides variable.</p>
+<table>
+<thead>
+<tr>
+<th>Slide / lesson</th>
+<th>Placeholder link</th>
+<th>What opens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multiplication Map launch / Practice 2-1</td>
+<td><code>{MATH_EXPLORERS_BASE}#map?a=4&amp;b=6</code></td>
+<td>Clean 12 × 12 map; markings hidden</td>
+</tr>
+<tr>
+<td>Mirror facts</td>
+<td><code>{MATH_EXPLORERS_BASE}#map?a=4&amp;b=6&amp;mirrors=1</code></td>
+<td>Click a cell to show its mirrored fact and array</td>
+</tr>
+<tr>
+<td>Common multiples / LCM</td>
+<td><code>{MATH_EXPLORERS_BASE}#multiples?a=4&amp;b=6</code></td>
+<td>Blank number lines; step through before revealing</td>
+</tr>
+<tr>
+<td>Factor pairs / prime factors</td>
+<td><code>{MATH_EXPLORERS_BASE}#tree?n=24</code></td>
+<td>Unsplit 24; choose factor pairs progressively</td>
+</tr>
+<tr>
+<td>GCF / LCM connections</td>
+<td><code>{MATH_EXPLORERS_BASE}#factors?a=24&amp;b=36</code></td>
+<td>Prime-factor comparison; GCF/LCM answers hidden</td>
+</tr>
+</tbody>
+</table>
+<p>Once deployed, replace the token with the actual base. Example:
+<code>https://macinnis61.github.io/math-explorers/#factors?a=24&amp;b=36</code></p>
+<p>In a future Google Slide, use a consistent button or text label such as <strong>Explore: GCF &amp; LCM</strong>. Select it and use <strong>Insert link</strong> (Ctrl+K / Command+K), then paste the full published link. Click it during presentation, use the explorer in the browser, then switch back to your Slides tab. These are external interactives; they are not embedded executable HTML inside the slide.</p>
+<p>Until deployment, put <strong>INTERACTIVE LINK TO ADD: GCF &amp; LCM / 24 and 36</strong> in the slide's speaker notes. Do not hyperlink a made-up address. Our future slide builds can use the placeholders in their planning notes and substitute the live base once known. Keep the full route in the notes so it is easy to reconnect.</p>
+<p><strong>Copy lesson link</strong> in the toolkit generates a URL with the current numbers, map toggles and answer-reveal setting. Tree links return to the starting number, not a partly completed tree. Multiples links restart the sequence. Selected map cells are not saved. For a prediction slide, copy the link while results are hidden. When using the local copy, it generates a <code>file:</code> link, which works only for that computer's file location; use a hosted link for sharing.</p>
+<h2>During an internet outage</h2>
+<p>Open the local file before class and keep it in a browser tab alongside your slides. If the online slide link fails, switch to that local tab, choose the tool and enter the same numbers. You can bookmark local tool routes on your own computer; they are not portable links for colleagues. The local explorer works offline regardless of whether the online copy has been opened before. Your slides need their own offline preparation; this package does not make Google Slides available offline.</p>
+<h2>Classroom use: short teaching, substantial student work</h2>
+<p>These are demonstrations and investigations, not automatic full-block lesson plans. A useful cycle is <strong>predict → explore → explain → practise</strong>. Usually spend 5–10 minutes in the tool, then let students work. A factor-tree lesson may need longer guided instruction and its own practice block.</p>
+<table>
+<thead>
+<tr>
+<th>Unit context</th>
+<th>Demonstrate</th>
+<th>Students then do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Practice 2-1: multiples</td>
+<td>Click 4 × 7; rotate the array mentally. Compare multiples of 4 and 6.</td>
+<td>Generate multiples and find common multiples/LCM on their chosen practice level. Use one known-fact question from NS05 as retrieval if appropriate.</td>
+</tr>
+<tr>
+<td>Practice 2-2: divisibility</td>
+<td>Highlight products divisible by 2, 5 or 10. Use the map as pattern evidence.</td>
+<td>Apply and explain rules on Practice 2-2. Teach digit-sum rules separately through place-value reasoning; the map alone does not prove them.</td>
+</tr>
+<tr>
+<td>Practice 2-3: factors</td>
+<td>Locate occurrences of 24 on the map; record row/column factor pairs separately.</td>
+<td>Complete pairs and factor rainbows, then GCF practice. Explicitly include 1 × 24, outside the map. A selected NS07 equivalence question can reinforce multiplication relationships.</td>
+</tr>
+<tr>
+<td>Shared prime-factor lesson / Practice 2-4</td>
+<td>Build 24 from 4 × 6, restart from 3 × 8, and compare final factors.</td>
+<td>Build and check their own trees for 12, 18, 24 or 36. Use partly completed trees for support. All students encounter prime factorization.</td>
+</tr>
+<tr>
+<td>GCF/LCM connections</td>
+<td>Compare 24 and 36. Predict from the shared and unshared prime copies.</td>
+<td>Solve and explain a few pairs; verify GCF with factor lists and LCM with multiple lists. Extend to prime-factor methods when ready.</td>
+</tr>
+</tbody>
+</table>
+<p>Ask: <strong>What do you predict? What changed? What stayed the same? How can you check without this tool?</strong> Keep permanent student-map annotations light; digital highlighting does not require students to colour every matching product.</p>
+<h2>Mathematical conventions and limits</h2>
+<ul>
+<li>Map: 1–12 in each direction. It highlights every displayed product divisible by either chosen number, rather than just its row. Sage = first; muted lavender = second; dark = both. If the two numbers match, their highlights are all shared. Square diagonal is an optional outline, not a permanent alteration.</li>
+<li>Map limits: the missing cell 1 × 24 is not a missing factor pair. The map does not establish primality for numbers outside its range.</li>
+<li>Trees: starting numbers 2–360. Only factor pairs greater than 1 are offered. Prime leaves are shaded. Restart to compare a different tree. <strong>Finish tree</strong> is a teacher shortcut; predict or construct first.</li>
+<li>Number lines: intervals 1–60. Each step adds one multiple to each sequence; it is not an animation of elapsed time. The display scales to include the LCM, so large coprime intervals can produce a dense display. Use smaller classroom examples such as 4/6, 6/8, 8/12 first.</li>
+<li>Prime-factor comparison: numbers 1–60. Repeated prime factors are matched one copy at a time. GCF multiplies shared copies; LCM multiplies all three regions, shared copies once. The empty product is 1. One has no prime factors and is neither prime nor composite.</li>
+<li>Student responses and progress are not recorded. Reopening a link returns to its starting configuration.</li>
+</ul>
+<h2>Sharing</h2>
+<p>Share the hosted URL or the ZIP with colleagues. This package contains original code and teaching notes, with no copies of the source commercial practice sheets. Teachers use their own copies of those resources. The permissive licence covers this toolkit's code and notes.</p>
+<h2>Product and factor-pair investigation</h2><p>Select <strong>Find a product</strong> and enter a target from 1 to 360. Matching cells are highlighted. Click any pair in the complete factor-pair list to show its array, including pairs outside the grid. Use <strong>Rotate array</strong> to turn it around.</p><p>Slide link: <code>{MATH_EXPLORERS_BASE}#map?highlight=product&amp;target=24</code>. GCF and LCM instructions remain visible before revealing the calculations.</p></main></html>

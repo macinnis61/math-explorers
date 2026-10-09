@@ -1,0 +1,20 @@
+Math Explorers verification
+
+Passed scripted DOM checks for map selection/mirroring/highlighting/clear;
+factor-pair selection, automatic completion and reset; GCF/LCM reveal;
+number-line stepping/reveal/restart; presentation entry/Escape exit;
+parameter links and invalid-number handling.
+
+Checked all 3,600 ordered pairs from 1 to 60:
+shared prime copies multiply to GCF, and the union of needed copies to LCM.
+Checked prime-factor products and valid splitting pairs for 2 through 360.
+No external scripts, styles, fonts, fetches or network APIs in the application.
+
+Rendered browser layout and device compatibility were not verified in this
+build environment: browser download was unavailable. Before first class,
+open the local HTML in your teaching browser, test each tab, and check
+presentation mode at your projector resolution with Wi-Fi off.
+
+Additional checks passed: exact-product highlights, factor pairs for 1–360,
+outside-grid arrays, array rotation, clear, parameter links, and explicit
+GCF/LCM explanations before and after reveal. Checked all 3,600 GCF/LCM pairs again.
